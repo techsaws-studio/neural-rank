@@ -4,6 +4,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 
 import { Badge } from "@/components/ui/badge";
+import AchievementStatsCard from "@/components/partials/achievement-stats-card";
 
 import acmeLogo from "../../../../public/logos/acme-logo.png";
 import pulseLogo from "../../../../public/logos/pulse-logo.png";
@@ -11,8 +12,6 @@ import echoLogo from "../../../../public/logos/echo-logo.png";
 import celestialLogo from "../../../../public/logos/celestial-logo.png";
 import apexLogo from "../../../../public/logos/apex-logo.png";
 import quantumLogo from "../../../../public/logos/quantum-logo.png";
-
-import AchievementStatsCard from "@/components/partials/achievement-stats-card";
 
 const AchievementSection = () => {
   return (
@@ -65,8 +64,16 @@ const AchievementSection = () => {
           </p>
         </div>
 
-        <AchievementStatsCard value="50M+" label="Data Points Analyzed" />
-        <AchievementStatsCard value="10+" label="AI Trained Models" />
+        <AchievementStatsCard
+          value="50M+"
+          label="Data Points Analyzed"
+          className="max-md:hidden"
+        />
+        <AchievementStatsCard
+          value="10+"
+          label="AI Trained Models"
+          className="max-md:hidden"
+        />
         <AchievementStatsCard value="70%" label="Drop in Manual Work" />
         <AchievementStatsCard value="1000+" label="Campaigns in Motion" />
         <AchievementStatsCard value="75%" label="Efficiency Boost" />
