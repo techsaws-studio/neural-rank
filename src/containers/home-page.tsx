@@ -1,6 +1,7 @@
 import AboutSection from "@/components/sections/home/about-section";
 import AchievementSection from "@/components/sections/home/achievement-section";
 import HomeHeroSection from "@/components/sections/home/home-hero-section";
+import ProcessSection from "@/components/sections/home/process-section";
 
 function HomePage() {
   return (
@@ -8,6 +9,7 @@ function HomePage() {
       <HomeHeroSection />
       <AchievementSection />
       <AboutSection />
+      <ProcessSection />
     </main>
   );
 }

@@ -54,8 +54,8 @@ const AchievementSection = () => {
           </Badge>
 
           <h3 className="lg:text-4xl text-3xl font-medium tracking-tight text-heading font-heading">
-            Over <span className="text-primary-hover">2500+</span> Businesses
-            Trust Nerual Rank
+            Over <span className="text-primary-hover font-bold">2500+</span>{" "}
+            Businesses Trust Nerual Rank
           </h3>
 
           <p className="text-sm leading-relaxed">
