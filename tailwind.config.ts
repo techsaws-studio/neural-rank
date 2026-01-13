@@ -3,7 +3,6 @@ import { PluginAPI } from "tailwindcss/types/config";
 import tailwindcssAnimate from "tailwindcss-animate";
 
 export default {
-
 	content: [
 		"./src/**/*.{js,ts,jsx,tsx,mdx}",
 		"./src/app/**/*.{js,ts,jsx,tsx,mdx}",
@@ -106,7 +105,7 @@ export default {
 		function ({ addComponents }: PluginAPI) {
 			addComponents({
 				".layout-standard": {
-					maxWidth: "1920px",
+					maxWidth: "1536px",
 					width: "90%",
 					marginLeft: "auto",
 					marginRight: "auto",

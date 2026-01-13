@@ -9,7 +9,7 @@ export const siteConfig = {
         "AI-powered SEO platform helping brands rank higher, grow faster, and dominate search.",
 
     url: process.env.NEXT_PUBLIC_SITE_URL,
-    ogImage: "/og/og-image.png",
+    ogImage: "/favicons/og-image.png",
     logo: "/favicons/logo.png",
 
     keywords: [

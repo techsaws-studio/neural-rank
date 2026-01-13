@@ -1,6 +1,7 @@
 import type { ReactNode } from "react";
 
 import "@/styles/globals.css";
+import "@/styles/includes.css";
 
 import { FontVariables } from "@/configurations/font";
 import { siteConfig } from "@/configurations/site";

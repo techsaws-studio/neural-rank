@@ -3,7 +3,7 @@
   "short_name": "Neural Rank",
   "description": "Neural Rank is an AI-powered SEO platform helping businesses rank higher, optimize content, and grow organic traffic with intelligent, data-driven search strategies across Google and AI-driven search engines.",
   "id": "/",
-  "start_url": "/?source=pwa",
+  "start_url": "/",
   "scope": "/",
   "display": "standalone",
   "display_override": [
