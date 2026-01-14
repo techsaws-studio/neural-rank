@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { motion, Variants } from "framer-motion";
 
-import { Badge } from "@/components/ui/badge";
+import { AnimatedBadge } from "@/components/partials/animated-badge";
 
 import GlassShapeImg01 from "../../../../public/images/glass-shape-img-01.png";
 import GlassShapeImg02 from "../../../../public/images/glass-shape-img-02.png";
@@ -55,7 +55,7 @@ function AboutSection() {
 
   return (
     <motion.section
-      className="layout-standard py-4 flex flex-col gap-8 overflow-hidden"
+      className="layout-standard md:py-4 py-2 flex flex-col gap-8 overflow-hidden"
       variants={containerVariants}
       initial="hidden"
       whileInView="show"
@@ -66,22 +66,18 @@ function AboutSection() {
         variants={containerVariants}
       >
         <motion.div variants={fadeUpVariants}>
-          <Badge className="w-fit rounded-full bg-white/10 text-heading font-heading font-light backdrop-blur-md border border-white/20 text-[11px]">
-            Built for Modern Search & AI Discovery
-          </Badge>
+          <AnimatedBadge heading="Modern Search & AI Discovery" />
         </motion.div>
 
-        <motion.h3
+        <motion.h1
           variants={fadeUpVariants}
-          className="lg:text-7xl md:text-6xl text-4xl lg:max-w-4xl font-medium tracking-tight text-heading font-heading uppercase"
+          className="lg:text-6xl md:text-5xl text-3xl lg:max-w-4xl !leading-[1.2] font-medium tracking-tight text-heading font-heading uppercase"
         >
-          AI-Driven SEO,
-          <br className="max-lg:hidden" />
-          Your{" "}
+          AI-Driven SEO, Your <br className="max-lg:hidden" />
           <span className="text-primary-hover font-semibold">
             Real Rankings
           </span>
-        </motion.h3>
+        </motion.h1>
       </motion.div>
 
       <div className="grid lg:grid-cols-2 grid-cols-1 gap-8">
@@ -120,7 +116,7 @@ function AboutSection() {
         >
           <motion.p
             variants={fadeUpVariants}
-            className="leading-relaxed md:text-lg text-base font-medium"
+            className="leading-relaxed lg:text-xl md:text-lg text-base font-medium"
           >
             Neural Rank is an AI-powered SEO platform designed to help brands
             understand search intent, optimize content intelligently, and
@@ -130,7 +126,7 @@ function AboutSection() {
 
           <motion.p
             variants={fadeUpVariants}
-            className="leading-relaxed md:text-lg text-base font-medium"
+            className="leading-relaxed lg:text-xl md:text-lg text-base font-medium"
           >
             Instead of guesswork and outdated tactics, Neural Rank uses
             data-driven insights and machine intelligence to guide smarter SEO

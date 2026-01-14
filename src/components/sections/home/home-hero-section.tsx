@@ -5,7 +5,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 
 import StarsBg from "../../../../public/backgrounds/stars-bg.png";
 import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
+import { AnimatedBadge } from "@/components/partials/animated-badge";
 
 function HomeHeroSection() {
   const sectionRef = useRef(null);
@@ -30,7 +30,7 @@ function HomeHeroSection() {
       transition={{ repeat: Infinity, duration: 90, ease: "linear" }}
     >
       <div className="absolute inset-0 bg-[radial-gradient(75%_75%_at_center_center,rgb(140,69,255,.5)_15%,rgb(14,0,36,.5)_78%,transparent)]" />
-      
+
       <div className="absolute inset-0 bg-black/20 z-[20]" />
 
       {/* Start Planet */}
@@ -74,17 +74,17 @@ function HomeHeroSection() {
       {/* End Ring 3 */}
 
       <div className="layout-standard section-margin-standard relative z-30 flex-center flex-col gap-4">
-        <Badge className="md:text-sm text-xs uppercase tracking-widest text-heading font-heading backdrop-blur text-center font-light bg-white/10 border-2 border-white/30 rounded-full">
-          AI-Powered SEO Platform
-        </Badge>
+        <AnimatedBadge
+          heading="Built for Modern Search & AI Discovery"
+        />
 
-        <h1 className="text-3xl md:text-[70px] lg:text-[90px] leading-[1.1] font-semibold tracking-tight bg-[radial-gradient(120%_120%_at_top_left,#ffffff_20%,#e9ddff_45%,rgba(140,69,255,0.6)_75%)] text-transparent bg-clip-text text-center uppercase">
+        <h1 className="lg:text-[7vw] text-[9vw] leading-[1.1] font-semibold tracking-tight bg-[radial-gradient(120%_120%_at_top_left,#ffffff_20%,#e9ddff_45%,rgba(140,69,255,0.6)_75%)] text-transparent bg-clip-text text-center uppercase">
           Rank Smarter
           <br />
           with AI-Driven SEO
         </h1>
 
-        <p className="md:max-w-4xl mx-auto text-sm md:text-lg lg:text-xl font-foreground text-foreground text-center leading-relaxed">
+        <p className="lg:max-w-4xl mx-auto text-base md:text-lg lg:text-xl font-foreground text-foreground text-center leading-relaxed">
           Neural Rank uses artificial intelligence to understand search intent,
           optimize content, and drive sustainable rankings across Google and
           AI-powered search engines.

@@ -45,7 +45,7 @@ function AchievementStatsCard({
     >
       <Card
         className={cn(
-          "relative overflow-hidden rounded-2xl md:h-[270px] py-8 bg-transparent border-2 border-border",
+          "relative overflow-hidden rounded-2xl lg:h-[350px] h-full py-8 bg-transparent border-2 border-border",
           className
         )}
       >
