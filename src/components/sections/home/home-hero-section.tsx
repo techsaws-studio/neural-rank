@@ -90,7 +90,7 @@ function HomeHeroSection() {
           AI-powered search engines.
         </p>
 
-        <div className="flex flex-col md:flex-row justify-center md:gap-4 gap-2 mt-6 max-md:w-full">
+        <div className="flex flex-col md:flex-row justify-center gap-4 mt-6 max-md:w-full">
           <Button className="relative px-6 md:h-[50px] h-[45px] rounded-full text-sm md:text-base font-medium bg-gradient-to-b from-[#2b135f] to-[#4a208a] shadow-[0_0_24px_rgba(140,69,255,0.6)]">
             <span className="relative z-10">Start Optimizing with AI</span>
 
