@@ -74,9 +74,7 @@ function HomeHeroSection() {
       {/* End Ring 3 */}
 
       <div className="layout-standard section-margin-standard relative z-30 flex-center flex-col gap-4">
-        <AnimatedBadge
-          heading="Built for Modern Search & AI Discovery"
-        />
+        <AnimatedBadge heading="Built for Modern Search & AI Discovery" />
 
         <h1 className="lg:text-[7vw] text-[9vw] leading-[1.1] font-semibold tracking-tight bg-[radial-gradient(120%_120%_at_top_left,#ffffff_20%,#e9ddff_45%,rgba(140,69,255,0.6)_75%)] text-transparent bg-clip-text text-center uppercase">
           Rank Smarter
@@ -90,15 +88,15 @@ function HomeHeroSection() {
           AI-powered search engines.
         </p>
 
-        <div className="flex flex-col md:flex-row justify-center gap-4 mt-6 max-md:w-full">
-          <Button className="relative px-6 md:h-[50px] h-[45px] rounded-full text-sm md:text-base font-medium bg-gradient-to-b from-[#2b135f] to-[#4a208a] shadow-[0_0_24px_rgba(140,69,255,0.6)]">
+        <div className="flex-center md:flex-row flex-col max-md:w-full gap-4 mt-6">
+          <Button className="relative max-md:w-full px-8 py-5 rounded-full text-sm md:text-base font-medium bg-gradient-to-b from-[#2b135f] to-[#4a208a] shadow-[0_0_24px_rgba(140,69,255,0.6)]">
             <span className="relative z-10">Start Optimizing with AI</span>
 
             <span className="absolute inset-0 rounded-full border border-white/20" />
             <span className="absolute inset-0 rounded-full shadow-[0_0_14px_rgba(140,69,255,0.7)_inset]" />
           </Button>
 
-          <Button className="px-6 md:h-[50px] h-[45px] rounded-full text-sm md:text-base font-medium border-border text-secondary-foreground hover:bg-secondary-hover bg-secondary">
+          <Button className="px-8 max-md:w-full py-5 rounded-full text-sm md:text-base font-medium border-border text-secondary-foreground hover:bg-secondary-hover bg-secondary">
             See How It Works
           </Button>
         </div>

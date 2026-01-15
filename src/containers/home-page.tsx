@@ -3,6 +3,7 @@ import {
   AboutSection02,
 } from "@/components/sections/home/about-sections";
 import AchievementSection from "@/components/sections/home/achievement-section";
+import AICallToActionSection from "@/components/sections/home/ai-call-to-action-section";
 import HomeHeroSection from "@/components/sections/home/home-hero-section";
 import ProcessSection from "@/components/sections/home/process-section";
 
@@ -14,6 +15,7 @@ function HomePage() {
       <AboutSection01 />
       <ProcessSection />
       <AboutSection02 />
+      <AICallToActionSection />
     </main>
   );
 }
