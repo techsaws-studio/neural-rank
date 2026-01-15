@@ -2,7 +2,7 @@
 
 import { motion, type Variants, cubicBezier } from "framer-motion";
 
-import { ProcessSectionContent } from "@/contents/home-page-content";
+import { ProcessSectionContent01 } from "@/contents/home-page-content";
 
 import { AnimatedBadge } from "@/components/partials/animated-badge";
 
@@ -55,7 +55,7 @@ function ProcessSection() {
         viewport={{ once: true, margin: "-120px" }}
         className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
       >
-        {ProcessSectionContent.map((item) => {
+        {ProcessSectionContent01.map((item) => {
           const Icon = item.icon;
 
           return (
