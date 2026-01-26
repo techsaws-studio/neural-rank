@@ -1,3 +1,4 @@
+import { SolutionHeroSection } from "@/components/sections/solutions/solutionhero";
 import SolutionsPage from "@/containers/solutions-page";
 
 import { PageMetadata } from "@/utils/page-matadata";
@@ -10,7 +11,7 @@ export const metadata = PageMetadata({
 });
 
 function Solutions() {
-  return <SolutionsPage />;
+  return <SolutionHeroSection />;
 }
 
 export default Solutions;

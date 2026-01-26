@@ -1,4 +1,6 @@
-import AboutPage from "@/containers/about-page";
+import { AboutCtaSection } from "@/components/sections/about/about-cta";
+import AboutHeroSection from "@/components/sections/about/about-hero";
+import AboutToolsSection from "@/components/sections/about/about-tools";
 
 import { PageMetadata } from "@/utils/page-matadata";
 
@@ -10,7 +12,16 @@ export const metadata = PageMetadata({
 });
 
 function About() {
-  return <AboutPage />;
+  return (
+    <main className="lg:pt-[100px] pt-[80px]">
+      <AboutHeroSection/>
+      <AboutToolsSection/>
+      <AboutCtaSection/>
+    </main>
+  );
+
+  
+
 }
 
 export default About;
